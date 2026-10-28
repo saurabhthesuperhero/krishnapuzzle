@@ -4,8 +4,8 @@
   BEFORE PUBLISHING (see docs/store/release_checklist.md):
     1. Replace the developer listed on its Google Play page and superprogrammersaurabh@gmail.com (every occurrence) with the real developer
        name and the support e-mail that is also set in Play Console.
-    2. Keep the "Children" section true: it describes AdsConfig.childDirected = true and no AD_ID
-       permission, the recommended setup when the Play target audience includes children.
+    2. Keep the "Age" section true: since 1.0.3 the Play target audience is 13+ (not Families),
+       AdsConfig.childDirected = false, personalised ads only with UMP consent, AD_ID permission kept.
     3. Host this file at a public, non-PDF URL and paste that URL into Play Console > App content >
        Privacy policy (and into the app's Settings screen).
 -->
@@ -80,7 +80,7 @@
   <div class="wrap">
     <h1>Privacy Policy</h1>
     <p>Krishna Puzzle Adventure (Android game)</p>
-    <p class="muted" style="color:#5a2e12">Last updated: 13 October 2026</p>
+    <p class="muted" style="color:#5a2e12">Last updated: 28 October 2026</p>
   </div>
 </header>
 
@@ -92,7 +92,8 @@
       <li><strong>We do not collect personal data.</strong> Your game progress and settings stay on your device.</li>
       <li><strong>Ads are provided by Google AdMob</strong>, which may collect device information to show and measure ads, as explained below.</li>
       <li><strong>Purchases are optional</strong> and handled entirely by Google Play.</li>
-      <li><strong>Made for families.</strong> Ads are requested as child-directed and are never personalised.</li>
+      <li><strong>Ads are provided by Google AdMob.</strong> With your consent where the law requires it, ads may be personalised using your device's advertising ID.</li>
+      <li><strong>The game is made for players aged 13 and over.</strong></li>
     </ul>
   </section>
 
@@ -131,8 +132,12 @@
     <li>your IP address, which can be used to estimate your general (city-level) location;</li>
     <li>device and app information such as device model, operating system and version, language and the game version;</li>
     <li>ad interactions such as impressions and taps, plus diagnostic and crash data from the ads SDK;</li>
-    <li>device identifiers, only where the platform makes them available to the SDK.</li>
+    <li>your device's <strong>advertising ID</strong> (the game declares the <code>AD_ID</code> permission for this) and other device identifiers made available to the SDK.</li>
   </ul>
+  <p>
+    Where you have agreed (or where consent is not required by law), ads may be personalised based on
+    this information. Otherwise only non-personalised ads are shown.
+  </p>
   <p>
     This data is collected and used by Google, not by us. Learn more in
     <a href="https://policies.google.com/privacy" rel="noopener">Google’s Privacy Policy</a>,
@@ -164,22 +169,13 @@
     <li><strong>Rate us</strong> opens Google Play’s own review dialog.</li>
   </ul>
 
-  <h2>Children</h2>
+  <h2>Age</h2>
   <p>
-    Krishna Puzzle Adventure is made to be enjoyed by families, including children. We do not
-    knowingly collect personal information from anyone, including children under 13 (or the minimum
-    age of digital consent in their country). Because children play the game:
-  </p>
-  <ul>
-    <li>every ad request is tagged for child-directed treatment (COPPA) and for users under the age of consent (GDPR);</li>
-    <li>personalised advertising and remarketing are turned off, and ads are limited to content rated suitable for general audiences (G);</li>
-    <li>the game does not access the Android advertising ID;</li>
-    <li>only ad SDKs that are part of Google Play’s Families self-certified ads program are used.</li>
-  </ul>
-  <p>
-    Parents or guardians who have a question, or who believe information about their child was
-    collected, can contact us at <a href="mailto:superprogrammersaurabh@gmail.com">superprogrammersaurabh@gmail.com</a> and we
-    will help right away.
+    Krishna Puzzle Adventure is made for players aged 13 and over and is not directed at children
+    under 13. We do not knowingly collect personal information from children under 13 (or the
+    minimum age of digital consent in their country). Parents or guardians who believe information
+    about their child was collected can contact us at
+    <a href="mailto:superprogrammersaurabh@gmail.com">superprogrammersaurabh@gmail.com</a> and we will help right away.
   </p>
 
   <h2>Data retention, deletion and your rights</h2>
@@ -218,7 +214,7 @@
       <li>गेम में कोई अकाउंट या लॉग-इन नहीं है। हम आपका नाम, ई-मेल, फ़ोन नंबर, फ़ोटो, संपर्क या सटीक लोकेशन कभी नहीं माँगते।</li>
       <li>हम कोई निजी जानकारी इकट्ठा नहीं करते। आपकी प्रगति और सेटिंग्स सिर्फ़ आपके फ़ोन में सेव रहती हैं।</li>
       <li>विज्ञापन Google AdMob दिखाता है। विज्ञापन दिखाने, गिनने और धोखाधड़ी रोकने के लिए Google डिवाइस की कुछ जानकारी (जैसे IP पता, डिवाइस मॉडल, विज्ञापन पर टैप) ले सकता है।</li>
-      <li>बच्चे भी यह गेम खेलते हैं, इसलिए सभी विज्ञापन बच्चों के लिए सुरक्षित (G रेटिंग) और बिना निजीकरण के माँगे जाते हैं।</li>
+      <li>यह गेम 13 वर्ष और उससे अधिक उम्र के खिलाड़ियों के लिए है। जहाँ क़ानून ज़रूरी करे, वहाँ आपकी सहमति से विज्ञापन आपके डिवाइस के विज्ञापन ID के आधार पर निजीकृत हो सकते हैं।</li>
       <li>इन-ऐप ख़रीदारी पूरी तरह Google Play संभालता है; हमें आपकी भुगतान जानकारी कभी नहीं मिलती।</li>
       <li>कोई सवाल हो तो लिखें: <a href="mailto:superprogrammersaurabh@gmail.com">superprogrammersaurabh@gmail.com</a></li>
     </ul>
